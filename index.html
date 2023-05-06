@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Digital Notebook</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="tools">
+                <h3>Digital Notebook</h3>
+                <div class="line"></div>
+            <button id="addmap" onclick="addmap()" data-tooltip="Add an editable mind map" class="tooltips"><img src="icons8-mind-map-32.png"></button>
+            <button onclick="mark()" data-tooltip="Mark text" class="tooltips"><img src="icons8-bookmark-50.png"></button>
+            <button id="clear" onclick="clearpad()"data-tooltip="Clears the notepad" class="tooltips"><img src="icons8-remove-50.png"></button>
+            <button id="save" onclick="savefile()" data-tooltip="Save your note" class="tooltips"><img src="icons8-save-50.png"></button>
+            <button id="load" onclick="loadfile()" data-tooltip="Load a file" class="tooltips"><img src="icons8-web-design-50.png"></button>
+            <input id="search" placeholder="Search for a word">
+            <button onclick="search()" id="searchbutton" data-tooltip="Search" class="tooltips"><img src="icons8-search-50.png"></button>
+            <button onclick="clearSearch()" data-tooltip="Clears the search" class="tooltips"><img src="icons8-macos-close-50.png"></button>
+
+        </div>
+        <div class="line"></div>
+            <label>Add note: </label>
+            <input placeholder="Add your note here" id="+note">
+            <button id="add" onclick="add()" data-tooltip="Add note" class="tooltips"><img src="icons8-add-50.png"></button>
+            <div class="line"></div>
+                <textarea id="notepad"></textarea>
+                <button onclick="opendiv()"><img src="icons8-down-button-100.png"></button>
+<div id="author" style="display: none;">
+<input id="name" placeholder="Enter your name">
+<button onclick="storeName()" data-tooltip="Add author name" class="tooltips"><img src="icons8-add-50.png"></button>
+<button onclick="clearName()" data-tooltip="Clear author name (refresh)" class="tooltips"><img src="icons8-macos-close-50.png"></button>
+</div>
+<label>2023 Digital Notebook v1.0 - </label>
+<label>all icons from Icons8</label>
+        </div>
+        <script src="notebook.js"></script>
+    </body>
+</html>
